@@ -62,7 +62,7 @@ func _physics_process(delta):
 	
 	var velocity_clamped = clamp(velocity.length(),0.5, SPRINT_SPEED * 2)
 	var target_fov =  BASE_FOV + FOV_CHANGE * velocity_clamped
-	camera.fov = lerp(camera.fov, target_fov, delta * 10)
+	camera.fov = lerp(camera.fov, target_fov, delta * 8)
 	
 	move_and_slide()
 
