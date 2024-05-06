@@ -43,8 +43,8 @@ shadow_mesh = SubResource("ArrayMesh_4wp0i")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5bm7s"]
 albedo_color = Color(0.145098, 0.145098, 0.145098, 1)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_p1ham"]
-size = Vector3(1, 0.744141, 0.046875)
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_dsrbq"]
+points = PackedVector3Array(-0.233359, 0.842984, -0.450004, -0.251762, 0.771744, -0.4275, -0.206832, 0.774303, -0.4275, 0.437451, 0.823832, -0.450004, -0.206832, 0.774303, -0.4725, -0.251762, 0.771744, -0.4725, -0.460063, 0.753831, -0.4725, -0.437549, 0.823832, -0.450004, -0.460063, 0.753831, -0.4275, 0.459965, 0.753831, -0.4275, 0.459965, 0.753831, -0.4725, -0.365211, 0.748878, -0.4725, -0.452525, -8.66658e-05, -0.465003, -0.5, 0.089974, -0.457501, -0.5, 0.623817, -0.457501, -0.5, 0.623817, -0.442503, -0.5, 0.089974, -0.442503, -0.452525, -8.66658e-05, -0.435001, -0.365211, 0.748878, -0.4275, 0.267522, 0.749291, -0.4275, 0.452428, -8.66658e-05, -0.435001, 0.5, 0.089974, -0.442503, 0.5, 0.623817, -0.442503, 0.5, 0.623817, -0.457501, 0.5, 0.089974, -0.457501, 0.452428, -8.66658e-05, -0.465003, 0.267522, 0.749291, -0.4725, -0.281617, -0.000334312, -0.465003, 0.344655, -0.000251763, -0.465003, -0.281617, -0.000334312, -0.435001, 0.344655, -0.000251763, -0.435001)
 
 [node name="iron-fence-damaged2" type="StaticBody3D"]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
@@ -54,6 +54,5 @@ mesh = SubResource("ArrayMesh_kony7")
 skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_5bm7s")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.426758, -0.452148)
-shape = SubResource("BoxShape3D_p1ham")
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_dsrbq")
