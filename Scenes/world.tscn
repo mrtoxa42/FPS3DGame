@@ -42,7 +42,7 @@ albedo_texture = ExtResource("1_2o8oh")
 emission_energy_multiplier = 7.29
 uv1_triplanar = true
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_el3i5"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_oo8v2"]
 resource_local_to_scene = true
 render_priority = 0
 shader = ExtResource("17_1o5or")
@@ -77,7 +77,7 @@ _surfaces = [{
 "format": 34359742495,
 "index_count": 12,
 "index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 3, 0, 1, 0, 0, 0, 4, 0, 5, 0, 6, 0, 7, 0, 5, 0, 4, 0),
-"material": SubResource("ShaderMaterial_el3i5"),
+"material": SubResource("ShaderMaterial_oo8v2"),
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
 "vertex_count": 8,
